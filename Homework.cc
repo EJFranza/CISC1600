@@ -5,12 +5,19 @@ using namespace std;
 
 int main ()
 {
-	string a;
-	cin >> a;
+	string username;
+	cout << "Enter your name: ";
+	cin >> username;
+	
+	string userage;
+	cout << "Enter your age: ";
+	cin >> userage;
+	
+	string userthing;
+	cout << "Enter your favorite thing: ";
+	cin >> userthing;
 
-	string b;
-	cin >> b;
-
-	cout << "Hello " << a << endl;
-	cout << "Hello " << b << endl;
+	cout << "Hi, my name is " << username << "." << endl;
+	cout << "I am " << userage << " years old and my favorite thing is " << userthing << "." << endl;
+	return 0;
 }
