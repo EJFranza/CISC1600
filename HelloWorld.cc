@@ -17,7 +17,6 @@ int main ()
 	cout<< "Enter your favorite thing: ";
 	cin >> userthing;
 
-	cout << "Hi, my name is " << username << "." << endl;
-	cout << "I am " << userage << " years old and my favorite thing is " << userthing << "." << endl;
+	cout << "Hi, my name is " << username << "." << " I am " << userage << " years old and my favorite thing is " << userthing << "." << endl;
 	return 0;
 }
