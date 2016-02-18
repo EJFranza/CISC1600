@@ -1,16 +1,20 @@
-//Using loops, have the user input three numbers and then add them all together;
 #include <iostream>
-#include <string>
 using namespace std;
 int main ()
 {
-	int x = i;
-	while(i < 3)  
+	int i= 1;
+	double x= 0;
+	double sum= 0;
 	{
-	cout << "Input a number: ";
-
-	if(i==3) break;
-	cout << "The summation of the above numbers is: " << x+x+x << endl;
+		for (; i <=3; i++)
+		{
+			cout << "Input "<< i << ": ";
+			cin >> x;
+			{	
+				sum=x+sum;
+			}
+		}
+		cout << "Sum of above numbers is: "<< sum << endl;
+		return 0;
 	}
-	return 0;
 }
