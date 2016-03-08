@@ -21,5 +21,5 @@ int main ()
 		}
 	}
 		cout << "Bingo! The number you guessed is correct." << endl;
-	return 0;
+return 0;
 }
