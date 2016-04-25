@@ -21,6 +21,13 @@ int getAverage(int studentScores[], int arraySize)
         int sum=0;
         for (int i=0; i<arraySize; i++)
 }
+
+void updateScore (string studentNames[], int studentScores[],int& scores, int index)
+{
+        studentScores[index-1] = scores;
+        outputOne(studentNames, studentScores, index);
+}
+
 int main ()
 {
         string names[5] = {"Abigail", "Bryce", "Cayli", "Doug", "Eric"};
@@ -57,16 +64,15 @@ int main ()
                                 break;
                         case 3:
                                 cout << "Average score = " << getAverage(scores, 5) << endl;
-                                break;
                         case 4:
                                 cout << "Input # of student you wish to update: ";
                                 cin >> index;
                                 if (index >=1 && index <= 5)
                                 {
-                                        outputOne(names, scores, index);
+                                        int newvalue;
                                         cout << "Input new score: ";
-                                        cin >> scores[index-1];
-                                        //updateScore( scores, score, index );
+                                        cin >> newvalue;
+                                        updateScore(names, scores, newvalue, index);
                                         cout << "Student's info is updated."<< endl;
                                         outputAll(names, scores, 5);
                                 }
@@ -74,6 +80,7 @@ int main ()
                                 {
                                         cout << "Invalid index!" << endl;
                                 }
+                                break;
                         default:
                                 running = false;
                                 break;
